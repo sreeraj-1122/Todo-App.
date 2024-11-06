@@ -24,9 +24,16 @@ Follow these instructions to set up and run the project on your local machine.
 Installation
 Clone the repository:
 
-git clone https://github.com/Fernandes7/todo-app-frontend.git
+https://github.com/sreeraj-1122/Todo-App..git
+
 Install Dependencies and Run Project:
 
-cd "Take Home Task Front End"
+cd frontend
 npm install
 npm run dev
+
+cd backend
+npm install
+npm run dev
+
+
