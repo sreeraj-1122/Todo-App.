@@ -1,39 +1,64 @@
-Todo App 
+# Todo App
 
-Features
+A simple Todo Application built with React, Node.js, Express.js, and MongoDB.
 
-a. Create a new project.
-b. List all projects.
-c. View a project
+## Features
 
-a. Project title (Editable).
-b. List of todos with description, date, and completion status.
-c. Actions to Add/Update/Remove a todo.
-d. Mark a todo as pending or complete.
+### a. Project Management
+- **Create a new project.**
+- **List all projects.**
+- **View a project**  
+  - Editable project title.
+  - List of todos with description, date, and completion status.
+  - Actions to Add, Update, and Remove todos.
+  - Mark todos as pending or complete.
 
-Technologies Used
-React Js
-Node js
-Express Js
-Mongo DB
+## Technologies Used
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
 
+## Getting Started
 
-Getting Started
 Follow these instructions to set up and run the project on your local machine.
 
-Installation
-Clone the repository:
+### Installation
 
-https://github.com/sreeraj-1122/Todo-App..git
+#### Clone the repository:
 
-Install Dependencies and Run Project:
+```bash
+git clone https://github.com/sreeraj-1122/Todo-App.git
 
+Install Dependencies and Run the Project:
+Frontend
+Navigate to the frontend folder:
+
+bash
+Copy code
 cd frontend
-npm install
-npm run dev
+Install the required dependencies:
 
+bash
+Copy code
+npm install
+Start the frontend server:
+
+bash
+Copy code
+npm run dev
+Backend
+Navigate to the backend folder:
+
+bash
+Copy code
 cd backend
+Install the required dependencies:
+
+bash
+Copy code
 npm install
+Start the backend server:
+
+bash
+Copy code
 npm run dev
-
-
