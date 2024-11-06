@@ -29,7 +29,7 @@ const ProjectList = () => {
         if (token) {
           setAuthToken(token);
         }
-        const response = await axios.get(`${baseUrl}/projects`, {
+        const response = await axios.get(`${baseUrl}/api/projects`, {
           headers: {
               Authorization: `Bearer ${token}`,
           }
@@ -47,7 +47,7 @@ const ProjectList = () => {
 
     try {
       const response = await axios.post(
-        `${baseUrl}/projects`, 
+        `${baseUrl}/api/projects`, 
         { title: newProjectTitle },
         {
           headers: {
@@ -66,7 +66,7 @@ const ProjectList = () => {
 
 const deleteProject = async (projectId) => {
   try {
-    await axios.delete(`${baseUrl}/projects/${projectId}`, {
+    await axios.delete(`${baseUrl}/api/projects/${projectId}`, {
       headers: {
         Authorization: `Bearer ${authToken}`,
       },

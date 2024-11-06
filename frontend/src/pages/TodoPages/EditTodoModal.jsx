@@ -3,22 +3,20 @@ import React, { useState, useEffect } from "react";
 const EditTodoModal = ({ showModal, setShowModal, todo, updateTodo }) => {
   const [description, setDescription] = useState("");
 
-  // Sync the modal state with the todo prop whenever it changes
   useEffect(() => {
     if (showModal && todo) {
       setDescription(todo.description);
     }
-  }, [showModal, todo]); // Depend on showModal and todo to reset when modal opens or todo changes
+  }, [showModal, todo]); 
 
   const handleSave = () => {
     if (description !== todo.description) {
-      updateTodo(todo._id, description); // Update the todo description via API call
+      updateTodo(todo._id, description); 
     }
-    setShowModal(false); // Close the modal after saving
+    setShowModal(false); 
   };
 
   if (!todo) {
-    // If there's no todo, return nothing or a loading state.
     return null;
   }
 

@@ -26,7 +26,7 @@ const Register = () => {
     }),
     onSubmit: async(values) => {
       try {
-        const response = await axios.post(`${baseUrl}/user/register`, values);
+        const response = await axios.post(`${baseUrl}/api/user/register`, values);
         const token = response.data.token;
         if (token) {
           localStorage.setItem('authToken', token);  

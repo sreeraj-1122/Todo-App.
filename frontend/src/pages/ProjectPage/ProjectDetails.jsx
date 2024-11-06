@@ -25,7 +25,7 @@ const ProjectDetails = () => {
         if (token) {
           setAuthToken(token);
         }
-        const response = await axios.get(`${baseUrl}/projects/${id}`, {
+        const response = await axios.get(`${baseUrl}/api/projects/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -54,7 +54,7 @@ const ProjectDetails = () => {
     };
     try {
       const response = await axios.post(
-        `${baseUrl}/projects/${id}/todos`,
+        `${baseUrl}/api/projects/${id}/todos`,
         todoWithStatus,
         {
           headers: {
@@ -71,7 +71,7 @@ const ProjectDetails = () => {
 
   const deleteTodo = async (todoId) => {
     try {
-      await axios.delete(`${baseUrl}/projects/${id}/todos/${todoId}`, {
+      await axios.delete(`${baseUrl}/api/projects/${id}/todos/${todoId}`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
@@ -90,7 +90,7 @@ const ProjectDetails = () => {
 
     try {
       await axios.patch(
-        `${baseUrl}/projects/${id}/todos/${todoId}/status`,
+        `${baseUrl}/api/projects/${id}/todos/${todoId}/status`,
         {
           status: updatedTodo.status,
         },
@@ -114,7 +114,7 @@ const ProjectDetails = () => {
   const updateTodo = async (todoId, newDescription) => {
     try {
       const response = await axios.put(
-        `${baseUrl}/projects/${id}/todos/${todoId}`,
+        `${baseUrl}/api/projects/${id}/todos/${todoId}`,
         { description: newDescription },
         {
           headers: {
@@ -138,7 +138,7 @@ const ProjectDetails = () => {
   const saveTitle = async (newTitle) => {
     try {
       const response = await axios.put(
-        `${baseUrl}/projects/${id}`,
+        `${baseUrl}/api/projects/${id}`,
         {
           title: newTitle,
         },
