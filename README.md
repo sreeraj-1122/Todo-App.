@@ -28,37 +28,48 @@ Follow these instructions to set up and run the project on your local machine.
 
 ```bash
 git clone https://github.com/sreeraj-1122/Todo-App.git
+```
 
-Install Dependencies and Run the Project:
-Frontend
-Navigate to the frontend folder:
+## Install Dependencies and Run the Project:
 
-bash
-Copy code
+### Frontend
+
+   Navigate to the frontend folder:
+
+```bash
+
 cd frontend
-Install the required dependencies:
+```
+### Install the required dependencies:
+```bash
 
-bash
-Copy code
 npm install
-Start the frontend server:
+```
+### Start the frontend server:
 
-bash
-Copy code
+```bash
+
 npm run dev
-Backend
-Navigate to the backend folder:
+```
+## Backend
+### Navigate to the backend folder:
 
-bash
-Copy code
+```bash
+
 cd backend
-Install the required dependencies:
+```
+###Install the required dependencies:
 
-bash
-Copy code
+```bash
+
 npm install
-Start the backend server:
 
-bash
-Copy code
+```
+
+### Start the backend server:
+
+```bash
+
 npm run dev
+
+```
